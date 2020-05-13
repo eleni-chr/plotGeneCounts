@@ -112,24 +112,26 @@ for dd=1:6
     ax1.YAxis.FontSize=12; %set y-axis fontsize.
     grid on;
     lim=ylim;
-    ylim([lim(1) lim(2)+2]);
+    ylim([-1 lim(2)+2]);
 
     %Plot normalised counts.
     yyaxis right
     ax2=gca;
-    set(ax2,'ycolor',[0.75, 0, 0.75],'FontSize',12)
+    set(ax2,'ycolor',[.75 0 .75],'FontSize',12)
     dataWTN=downCountsN(1,1:3);
     dataMTN=downCountsN(1,4:6);
     meanWTN=mean(dataWTN); %calculate the mean for wildtypes.
     meanMTN=mean(dataMTN); %calculate the mean for mutants.
     x3=4*ones(1,length(dataWTN));
     x4=10*ones(1,length(dataMTN));
-    plot(x3,dataWTN,'k.','MarkerEdgeColor',[0.75, 0, 0.75],'MarkerFaceColor',[0, 0.4470, 0.7410],'MarkerSize',20); %plot wildyptes.
+    plot(x3,dataWTN,'k.','MarkerEdgeColor',[.75 0 .75],'MarkerFaceColor',[0, 0.4470, 0.7410],'MarkerSize',20); %plot wildyptes.
     hold on;
     plot(x3,meanWTN,'kx','MarkerSize',12); %plot mean for wildtypes.
     plot(x4,dataMTN,'k.','MarkerEdgeColor',[0.75, 0, 0.75],'MarkerSize',20); %plot mutants.
     plot(x4,meanMTN,'kx','MarkerSize',12); %plot mean for mutants.
     ylabel('Normalised count','FontSize',12); %add y-axis label.
+    lim=ylim;
+    ylim([-1 lim(2)]);
     hold off;
 end
 
@@ -167,7 +169,7 @@ for dd=1:6
     ax1.YAxis.FontSize=12; %set y-axis fontsize.
     grid on;
     lim=ylim;
-    ylim([lim(1) lim(2)+2]);
+    ylim([-1 lim(2)+2]);
 
     %Plot normalised counts.
     yyaxis right
@@ -185,6 +187,8 @@ for dd=1:6
     plot(x4,dataMTN,'k.','MarkerEdgeColor',[0.75, 0, 0.75],'MarkerSize',20); %plot mutants.
     plot(x4,meanMTN,'kx','MarkerSize',12); %plot mean for mutants.
     ylabel('Normalised count','FontSize',12); %add y-axis label.
+    lim=ylim;
+    ylim([-1 lim(2)]);
     hold off;
 end
 
