@@ -99,9 +99,9 @@ for dd=1:6
     x2=8*ones(1,length(dataMT));
     plot(x1,dataWT,'k.','MarkerSize',20); %plot wildyptes.
     hold on;
-    plot(x1,meanWT,'kx','MarkerSize',12); %plot mean for wildtypes.
+%     plot(x1,meanWT,'kx','MarkerSize',12); %plot mean for wildtypes.
     plot(x2,dataMT,'k.','MarkerSize',20); %plot mutants.
-    plot(x2,meanMT,'kx','MarkerSize',12); %plot mean for mutants.
+%     plot(x2,meanMT,'kx','MarkerSize',12); %plot mean for mutants.
     set(gca,'box','off'); %remove top x-axis and right y-axis.
     xlim([0 12]);
     xticks(0:12);
@@ -126,9 +126,9 @@ for dd=1:6
     x4=10*ones(1,length(dataMTN));
     plot(x3,dataWTN,'k.','MarkerEdgeColor',[.75 0 .75],'MarkerFaceColor',[0, 0.4470, 0.7410],'MarkerSize',20); %plot wildyptes.
     hold on;
-    plot(x3,meanWTN,'kx','MarkerSize',12); %plot mean for wildtypes.
+%     plot(x3,meanWTN,'kx','MarkerSize',12); %plot mean for wildtypes.
     plot(x4,dataMTN,'k.','MarkerEdgeColor',[0.75, 0, 0.75],'MarkerSize',20); %plot mutants.
-    plot(x4,meanMTN,'kx','MarkerSize',12); %plot mean for mutants.
+%     plot(x4,meanMTN,'kx','MarkerSize',12); %plot mean for mutants.
     ylabel('Normalised count','FontSize',12); %add y-axis label.
     lim=ylim;
     ylim([-1 lim(2)]);
@@ -156,9 +156,9 @@ for dd=1:6
     x2=8*ones(1,length(dataMT));
     plot(x1,dataWT,'k.','MarkerSize',20); %plot wildyptes.
     hold on;
-    plot(x1,meanWT,'kx','MarkerSize',12); %plot mean for wildtypes.
+%     plot(x1,meanWT,'kx','MarkerSize',12); %plot mean for wildtypes.
     plot(x2,dataMT,'k.','MarkerSize',20); %plot mutants.
-    plot(x2,meanMT,'kx','MarkerSize',12); %plot mean for mutants.
+%     plot(x2,meanMT,'kx','MarkerSize',12); %plot mean for mutants.
     set(gca,'box','off'); %remove top x-axis and right y-axis.
     xlim([0 12]);
     xticks(0:12);
@@ -183,9 +183,9 @@ for dd=1:6
     x4=10*ones(1,length(dataMTN));
     plot(x3,dataWTN,'k.','MarkerEdgeColor',[0.75, 0, 0.75],'MarkerFaceColor',[0, 0.4470, 0.7410],'MarkerSize',20); %plot wildyptes.
     hold on;
-    plot(x3,meanWTN,'kx','MarkerSize',12); %plot mean for wildtypes.
+%     plot(x3,meanWTN,'kx','MarkerSize',12); %plot mean for wildtypes.
     plot(x4,dataMTN,'k.','MarkerEdgeColor',[0.75, 0, 0.75],'MarkerSize',20); %plot mutants.
-    plot(x4,meanMTN,'kx','MarkerSize',12); %plot mean for mutants.
+%     plot(x4,meanMTN,'kx','MarkerSize',12); %plot mean for mutants.
     ylabel('Normalised count','FontSize',12); %add y-axis label.
     lim=ylim;
     ylim([-1 lim(2)]);
